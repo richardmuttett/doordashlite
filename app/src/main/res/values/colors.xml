@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainText">#000000</color>
+    <color name="detailText">#808080</color>
+    <color name="semiTransparent">#80808080</color>
+    <color name="horizontalDivider">#c0c0c0</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/restaurant_item_spacing">
+
+    <ImageView
+        android:id="@+id/coverImage"
+        android:layout_width="@dimen/restaurant_item_cover_image_width"
+        android:layout_height="@dimen/restaurant_item_cover_image_height"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:id="@+id/restaurantInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/restaurant_item_spacing"
+        android:layout_marginEnd="@dimen/restaurant_item_spacing"
+        android:layout_marginLeft="@dimen/restaurant_item_spacing"
+        android:layout_marginRight="@dimen/restaurant_item_spacing"
+        android:layout_marginStart="@dimen/restaurant_item_spacing"
+        android:layout_toEndOf="@+id/coverImage"
+        android:layout_toLeftOf="@+id/coverImage"
+        android:layout_toRightOf="@+id/star"
+        android:layout_toStartOf="@+id/star"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/mainText"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Restaurant Name"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/detailText"
+            android:textSize="12sp"
+            tools:text="Restaurant Description"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/restaurantInfo"
+        android:ellipsize="start"
+        android:maxLines="1"
+        android:textColor="@color/detailText"
+        android:textSize="12sp"
+        tools:text="Restaurant Status"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/status"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_star"/>
+
+</RelativeLayout>

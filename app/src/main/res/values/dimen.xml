@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="restaurant_item_spacing">10dp</dimen>
+    <dimen name="restaurant_item_cover_image_width">88dp</dimen>
+    <dimen name="restaurant_item_cover_image_height">46dp</dimen>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DoorDash Lite</string>
+    <string name="could_not_load_data">The restaurant list could not be loaded</string>
+</resources>
